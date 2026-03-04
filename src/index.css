@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #001f3f;
+  --color-gold: #c5a059;
+  --color-gold-light: #e6d5b8;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 font-sans;
+  }
+}
+
+.glass-nav {
+  @apply bg-white/90 backdrop-blur-md border-b border-slate-200;
+}
+
+.section-padding {
+  @apply py-20 px-6 md:px-12 lg:px-24;
+}
+
+.heading-primary {
+  @apply text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-navy leading-tight;
+}
+
+.heading-secondary {
+  @apply text-3xl md:text-4xl font-serif font-bold text-navy mb-6;
+}
+
+.text-gold {
+  @apply text-gold;
+}
+
+.bg-navy {
+  @apply bg-navy;
+}
+
+.bg-gold {
+  @apply bg-gold;
+}
+
+.btn-primary {
+  @apply bg-navy text-white px-8 py-3 rounded-full font-semibold transition-all hover:bg-navy/90 hover:shadow-lg active:scale-95;
+}
+
+.btn-secondary {
+  @apply border-2 border-navy text-navy px-8 py-3 rounded-full font-semibold transition-all hover:bg-navy hover:text-white hover:shadow-lg active:scale-95;
+}
+
+.card {
+  @apply bg-white p-8 rounded-2xl shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:-translate-y-1;
+}

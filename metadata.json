@@ -1,0 +1,5 @@
+{
+  "name": "Little Angels High School",
+  "description": "A premium, modern school website for Little Angels High School, Jaggaiahpeta. Established in 1998, focusing on academic excellence and holistic development.",
+  "requestFramePermissions": ["geolocation"]
+}
